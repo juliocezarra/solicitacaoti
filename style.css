@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
 body {
     text-align: center;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family:'Source Sans Pro',sans-serif !important; 
     background: linear-gradient(to right, rgba(135, 115, 247, 0), rgb(101, 186, 243)) !important;
   }
 
@@ -50,8 +50,3 @@ body {
     color: rgb(0, 0, 0);
     text-align: right;
   }
-  /* input, textarea {
-    width: 100%;
-    display:flex;
-    padding-right: 50px;       
-  } */

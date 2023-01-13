@@ -11,21 +11,10 @@
     VALUES ('', '$subject', '$description', '$name','$email')";
     
     if ($conn->query($sql) === TRUE) {
-      echo "Nova solicitação armazenada";
+      $conn->close();
+      header('Location: /request/index.php');
     } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
+      $conn->close();
+      header('Location: /request/new.php');
     }
-    
-    $conn->close();
-
-    header('Location: /request/index.php');
-    
-
-
-   
-
-
-
-    
-
-    
+?>  
